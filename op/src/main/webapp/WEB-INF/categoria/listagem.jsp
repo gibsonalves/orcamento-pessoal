@@ -13,6 +13,11 @@
 	<style type="text/css">
 		@IMPORT url("${path}/static/bootstrap/css/bootstrap.min.css");
 		@IMPORT url("${path}/static/bootstrap/css/bootstrap-theme.min.css");
+		
+		.btn{
+			height: 22px;
+	    	padding: 0px 2px; 		
+		}
 	</style>
 </head>
 <body>

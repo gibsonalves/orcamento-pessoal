@@ -38,6 +38,10 @@ public class CategoriaController {
 	public String salvarCategoria(@Valid @ModelAttribute Categoria categoria, BindingResult bindingResult,
 			Model model) {
 		if (bindingResult.hasErrors()) {
+			/*List<ObjectError> erros = bindingResult.getAllErrors();
+			for (ObjectError w : erros) {
+				System.out.println(w.getDefaultMessage());
+			}*/
 			throw new CategoriaInvalidaException();
 		} else {
 			servicoCategoria.salvarCategoria(categoria);

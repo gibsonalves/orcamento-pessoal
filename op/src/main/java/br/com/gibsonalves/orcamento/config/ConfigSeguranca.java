@@ -35,12 +35,12 @@ public class ConfigSeguranca extends WebSecurityConfigurerAdapter {
 	http
 		.authorizeRequests()
 			.antMatchers().permitAll()
-			.antMatchers("/pizzas/**","/ingredientes/**","/categorias/**","/movimentos/**").hasRole("USUARIO")
+			.antMatchers("/dash","/categorias/**","/movimentos/**").hasRole("USUARIO")
 		.and()
 			.formLogin()
 				.loginPage("/login")
 				.loginProcessingUrl("/autenticar")
-				.defaultSuccessUrl("/pizzas")
+				.defaultSuccessUrl("/")
 				.failureUrl("/login?semacesso=true")
 				.usernameParameter("usuario")
 				.passwordParameter("senha")
@@ -61,9 +61,9 @@ public class ConfigSeguranca extends WebSecurityConfigurerAdapter {
 	}
 	
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		System.out.println(encoder.encode("gibson"));
-	}
+	}*/
 	
 }

@@ -9,10 +9,10 @@
 	class="table table-hover table-condensed table-striped table-bordered">
 	<thead>
 		<tr>
-			<td style="width: 60%">Categoria</td>
-			<td style="width: 20%">Tipo</td>
-			<td style="width: 10%">Editar</td>
-			<td style="width: 10%">Deletar</td>
+			<td style="width: 80%">Categoria</td>
+			<td style="width: 10%">Tipo</td>
+			<td style="width: 5%"></td>
+			<td style="width: 5%"></td>
 		</tr>
 	</thead>
 	<tbody>

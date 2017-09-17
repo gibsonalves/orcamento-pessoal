@@ -24,7 +24,7 @@ public class Categoria {
 	@NotEmpty
 	private String nome;
 
-	@NotNull
+	//Não colocar @NotNull
 	@ManyToOne
 	private Usuario usuario;
 
