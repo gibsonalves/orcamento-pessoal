@@ -25,7 +25,7 @@ public class ConfigBD {
 	public DataSource dataSource() throws IllegalStateException, PropertyVetoException {
 		ComboPooledDataSource dataSource = new ComboPooledDataSource();
 		dataSource.setDriverClass("com.mysql.jdbc.Driver");
-		dataSource.setJdbcUrl("jdbc:mysql://52.2.18.21:3306/orcamento");
+		dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/orcamento");
 		dataSource.setUser("orcamento");
 		dataSource.setPassword("orcamento");
 		return dataSource;
