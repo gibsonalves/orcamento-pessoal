@@ -16,7 +16,7 @@ public class Orcamento {
 
 	@NotNull
 	@ManyToOne
-	private Periodo Periodo;
+	private Periodo periodo;
 
 	@NotNull
 	@ManyToOne
@@ -36,11 +36,11 @@ public class Orcamento {
 	}
 
 	public Periodo getPeriodo() {
-		return Periodo;
+		return periodo;
 	}
 
 	public void setPeriodo(Periodo periodo) {
-		Periodo = periodo;
+		this.periodo = periodo;
 	}
 
 	public Categoria getCategoria() {

@@ -17,5 +17,13 @@ public class ServicoOrcamento {
 	public Iterable<Orcamento> listarTodosOrcamentos() {
 		return orcamentoRepositorio.findAll();
 	}
+	
+	
+	
+	public Double somaOrcamentoPorIdPeriodoEIdCategoria(Long idPeriodo, Long idCategoria) {
+		Double r;
+		r = orcamentoRepositorio.sumByIdPeriodoAndByIdCategoria(idPeriodo, idCategoria);
+		return r;
+	}
 
 }

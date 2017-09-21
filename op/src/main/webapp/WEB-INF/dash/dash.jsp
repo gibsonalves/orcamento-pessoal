@@ -23,9 +23,11 @@
 }
 
 .topTable {
+	font-size: 12px;
     font-weight: bold;
     background-color: #eeeeee;
     text-align: center;
+    width: 75px;
 }
 .itemCategoria {
     font-size: 12px;
@@ -37,6 +39,26 @@
     font-size: 12px;
     padding: 2px !important;
     text-align: right;
+}
+
+.celulaVermelha{
+	background-color: #EA9999;
+}
+
+.celulaAmarela{
+	background-color: #FFE599;
+}
+
+.celulaAzul{
+	background-color: #6D9EEB;
+}
+
+.celulaVerde{
+	background-color: #D9EAD3;
+}
+
+a {
+	color: #000000;
 }
 
 </style>

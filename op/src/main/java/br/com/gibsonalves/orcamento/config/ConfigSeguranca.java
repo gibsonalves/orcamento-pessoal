@@ -35,7 +35,7 @@ public class ConfigSeguranca extends WebSecurityConfigurerAdapter {
 	http
 		.authorizeRequests()
 			.antMatchers().permitAll()
-			.antMatchers("/dash","/categorias/**","/movimentos/**").hasRole("USUARIO")
+			.antMatchers("/dash/**","/categorias/**","/movimentos/**").hasRole("USUARIO")
 		.and()
 			.formLogin()
 				.loginPage("/login")

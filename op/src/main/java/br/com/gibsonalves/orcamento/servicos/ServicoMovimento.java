@@ -1,5 +1,7 @@
 package br.com.gibsonalves.orcamento.servicos;
 
+import java.util.Calendar;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,5 +32,12 @@ public class ServicoMovimento {
 	public Movimento buscarMovimentoPorId(Long id) {
 		return movimentoRepositorio.findOne(id);
 	}
+	
+	public Double somaMovimentosPorPeriodoECategoria(Long idCategoria, Calendar inicio, Calendar termino) {
+		Double r;
+		r = movimentoRepositorio.sumByCategoriaByPeriodo(idCategoria, inicio, termino);
+		return r;
+	}
+	
 
 }
